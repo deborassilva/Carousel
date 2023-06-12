@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="carousel">
+        <div class="carousel-slide">
+          <img src="assets/img/images.jpg" alt="Slide 1">
+        </div>
+        <div class="carousel-slide">
+          <img src="assets/img/images2.jpg" alt="Slide 2">
+        </div>
+        <div class="carousel-slide">
+          <img src="assets/img/maltes-lacinho.jpg" alt="Slide 3">
+        </div>
+      
+        <button id="prevBtn">&#10094;</button>
+        <button id="nextBtn">&#10095;</button>
+      </div>
+       <h2>Carousel Splide.js</h2>
+       <section class="splide" aria-label="Splide Basic HTML Example">
+        <div class="splide__track">
+              <ul class="splide__list">
+                  <li class="splide__slide"><img src="assets/img/images.jpg" alt="Slide 1"></li>
+                  <li class="splide__slide"><img src="assets/img/images2.jpg" alt="Slide 2"></li>
+                  <li class="splide__slide"><img src="assets/img/maltes-lacinho.jpg" alt="Slide 3"></li>
+              </ul>
+        </div>
+      </section>
+
+      <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <script src="js/index.js"></script>
+    <script>
+        document.addEventListener( 'DOMContentLoaded', function() {
+          var splide = new Splide( '.splide' );
+          splide.mount();
+        } );
+      </script>
+</body>
+</html>

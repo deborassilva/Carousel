@@ -1,0 +1,37 @@
+.carousel {
+    position: relative;
+    width: 50%;
+    overflow: hidden;
+  }
+  
+  .carousel-slide {
+    display: none;
+  }
+  
+  .carousel-slide img {
+    width: 100%;
+    height: auto;
+  }
+  
+  #prevBtn,
+  #nextBtn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    z-index: 1;
+  }
+  
+  #prevBtn {
+    left: 10px;
+  }
+  
+  #nextBtn {
+    right: 10px;
+  }
+  
